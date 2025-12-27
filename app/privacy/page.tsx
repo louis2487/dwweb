@@ -20,7 +20,7 @@ const CONFIG: PrivacyPolicyConfig = {
   serviceName: "분양프로",
   effectiveDate: "2025.12.27",
   contactEmail: "daewon469@naver.com",
-  contactPhone: "+8299165233",
+  contactPhone: "+821099165233",
   privacyOfficerName: "김대원",
   privacyOfficerTitle: "대표",
   privacyOfficerEmail: "daewon469@naver.com",
@@ -126,7 +126,7 @@ export default function PrivacyPolicyPage() {
             <h3 style={styles.h3}>(1) 회원가입/로그인 시</h3>
             <ul style={styles.ul}>
               <li>
-                <b>필수</b>: 닉네임, 비밀번호, 이름, 전화번호, 관심지역
+                필수: 닉네임, 비밀번호, 이름, 전화번호, 지역
               </li>
             </ul>
 
@@ -154,7 +154,7 @@ export default function PrivacyPolicyPage() {
               <li>서비스 이용기록(로그): 내부 운영정책에 따름</li>
               <li>고객문의 기록: 처리 완료 후</li>
               <li>
-                법령에 따른 보관(해당 시)
+                법령에 따른 보관
                 <ul style={styles.ulNested}>
                   <li>계약/청약철회/대금결제 및 재화 공급에 관한 기록: 5년(전자상거래법)</li>
                   <li>소비자 불만/분쟁처리 기록: 3년(전자상거래법)</li>
@@ -256,7 +256,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section style={styles.section}>
-            <h2 style={styles.h2}>11. 개인정보 보호책임자 및 담당부서</h2>
+            <h2 style={styles.h2}>11. 개인정보 보호책임자 및 문의</h2>
             <ul style={styles.ul}>
               <li>개인정보 보호책임자: {c.privacyOfficerName || "[성명/직책]"} </li>
               <li>
