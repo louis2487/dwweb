@@ -20,11 +20,11 @@ const CONFIG: PrivacyPolicyConfig = {
   serviceName: "분양프로",
   effectiveDate: "2025.12.27",
   contactEmail: "daewon469@naver.com",
-  contactPhone: "01099165233",
+  contactPhone: "+8299165233",
   privacyOfficerName: "김대원",
   privacyOfficerTitle: "대표",
   privacyOfficerEmail: "daewon469@naver.com",
-  websiteUrl: "https://www.daewon469.com",
+  websiteUrl: "https://www.daewon469.com/privacy",
   appPolicyNoticeDate: "2025.12.27",
   appPolicyLastUpdated: "2025.12.27",
 };
@@ -113,7 +113,7 @@ export default function PrivacyPolicyPage() {
               <li>서비스 제공(게시글/댓글/좋아요/알림 등 커뮤니티 기능 제공)</li>
               <li>문의/민원 처리 및 공지사항 전달</li>
               <li>서비스 품질 개선, 오류 분석, 부정 이용 방지</li>
-              <li>(선택) 마케팅/프로모션 안내 및 맞춤형 서비스 제공 [해당 시에만]</li>
+              <li>(선택) 마케팅/프로모션 안내 및 맞춤형 서비스 제공</li>
             </ul>
           </section>
 
@@ -126,10 +126,7 @@ export default function PrivacyPolicyPage() {
             <h3 style={styles.h3}>(1) 회원가입/로그인 시</h3>
             <ul style={styles.ul}>
               <li>
-                <b>필수</b>: [이메일 또는 휴대전화번호], [닉네임], [비밀번호(직접 가입 시)]
-              </li>
-              <li>
-                <b>선택</b>: 프로필 사진, 자기소개, 관심지역 등 [사용 시 기재]
+                <b>필수</b>: 닉네임, 비밀번호, 이름, 전화번호, 관심지역
               </li>
             </ul>
 
@@ -139,23 +136,11 @@ export default function PrivacyPolicyPage() {
               <li>푸시 알림 토큰(기기 알림 발송을 위해 필요)</li>
             </ul>
 
-            <h3 style={styles.h3}>(3) 위치정보(해당 시에만)</h3>
-            <ul style={styles.ul}>
-              <li>[지도 기능/주변 분양 정보/지역 검색] 제공을 위해 위치정보를 이용할 수 있습니다.</li>
-              <li>위치 수집 방식: [정확한 위치/대략적 위치], [사용자 동의 후 앱 권한 허용 시]</li>
-              <li>회사는 위치정보를 [저장하지 않음 / 저장함(기간: ○○)] 중 실제 운영에 맞게 기재</li>
-            </ul>
 
-            <h3 style={styles.h3}>(4) 고객 문의 시</h3>
+            <h3 style={styles.h3}>(3) 고객 문의 시</h3>
             <ul style={styles.ul}>
               <li>문의 내용, 연락처, 첨부파일(사용자가 업로드한 자료)</li>
             </ul>
-
-            <div style={styles.notice}>
-              <b>중요:</b> 실제 앱에서 사용하는 로그인 방식(구글/애플/카카오/이메일)과
-              SDK(Firebase, GA, Crashlytics, AdMob 등)에 따라 “수집항목/제3자 제공/위탁”
-              문구가 달라집니다. 사용하지 않는 항목은 삭제해 주세요.
-            </div>
           </section>
 
           <section style={styles.section}>
@@ -166,14 +151,14 @@ export default function PrivacyPolicyPage() {
             </p>
             <ul style={styles.ul}>
               <li>회원정보: 회원 탈퇴 시까지</li>
-              <li>서비스 이용기록(로그): [예: 3개월/1년] 또는 내부 운영정책에 따름</li>
-              <li>고객문의 기록: 처리 완료 후 [예: 3년]</li>
+              <li>서비스 이용기록(로그): 내부 운영정책에 따름</li>
+              <li>고객문의 기록: 처리 완료 후</li>
               <li>
                 법령에 따른 보관(해당 시)
                 <ul style={styles.ulNested}>
-                  <li>계약/청약철회/대금결제 및 재화 공급에 관한 기록: 5년(전자상거래법) [유료결제 있으면]</li>
-                  <li>소비자 불만/분쟁처리 기록: 3년(전자상거래법) [해당 시]</li>
-                  <li>표시/광고 기록: 6개월(전자상거래법) [해당 시]</li>
+                  <li>계약/청약철회/대금결제 및 재화 공급에 관한 기록: 5년(전자상거래법)</li>
+                  <li>소비자 불만/분쟁처리 기록: 3년(전자상거래법)</li>
+                  <li>표시/광고 기록: 6개월(전자상거래법)</li>
                 </ul>
               </li>
             </ul>
@@ -188,10 +173,6 @@ export default function PrivacyPolicyPage() {
               <li>이용자가 사전에 동의한 경우</li>
               <li>법령에 근거가 있거나 수사기관의 적법한 절차에 따른 요청이 있는 경우</li>
             </ul>
-            <div style={styles.notice}>
-              제3자 제공이 있는 경우(예: 광고/제휴/결제), 아래 항목을 반드시 명시해야 합니다:
-              제공받는 자 / 제공 목적 / 제공 항목 / 보유·이용기간
-            </div>
           </section>
 
           <section style={styles.section}>
@@ -229,9 +210,6 @@ export default function PrivacyPolicyPage() {
                 </a>
               </li>
             </ul>
-            <p style={styles.pMuted}>
-              ※ 만 14세 미만 아동의 개인정보를 처리하는 경우 법정대리인 동의 절차를 마련합니다. [대상에 포함되면 구체화]
-            </p>
           </section>
 
           <section style={styles.section}>
@@ -256,33 +234,25 @@ export default function PrivacyPolicyPage() {
             <ul style={styles.ul}>
               <li>관리적 조치: 내부 관리계획 수립, 정기 교육, 접근권한 최소화</li>
               <li>기술적 조치: 암호화(비밀번호 등), 접근통제, 로그관리, 보안프로그램 적용</li>
-              <li>물리적 조치: 전산실/자료보관실 접근통제(해당 시)</li>
+              <li>물리적 조치: 전산실/자료보관실 접근통제</li>
             </ul>
           </section>
 
           <section style={styles.section}>
             <h2 style={styles.h2}>9. 개인정보 자동 수집 장치의 설치·운영 및 거부</h2>
             <p style={styles.p}>
-              회사는 서비스 제공 및 품질 개선을 위해 쿠키/식별자 등 자동 수집 장치를 사용할 수 있습니다.
-              이용자는 브라우저/OS 설정을 통해 쿠키 저장을 거부할 수 있으나, 일부 기능이 제한될 수 있습니다.
-            </p>
+              회사는 서비스 제공 및 품질 개선을 위해 쿠키/식별자 등 자동 수집 장치를 사용하지 않습니다.</p>
           </section>
 
           <section style={styles.section}>
             <h2 style={styles.h2}>10. 앱 권한(접근권한) 안내</h2>
             <p style={styles.p}>
               {c.serviceName}는 원활한 서비스 제공을 위해 아래 권한을 요청할 수 있습니다.
-              (안드로이드/iOS 정책에 따라 “필요 시” 요청)
             </p>
             <ul style={styles.ul}>
               <li>(선택) 알림: 푸시 알림 수신</li>
               <li>(선택) 사진/저장공간: 프로필/게시물 이미지 업로드</li>
-              <li>(선택) 위치: 지도 기반 기능 제공 [사용 시]</li>
-              <li>(선택) 카메라: 사진 촬영 업로드 [사용 시]</li>
             </ul>
-            <p style={styles.pMuted}>
-              각 권한은 동의하지 않아도 기본 서비스 이용이 가능하나, 일부 기능이 제한될 수 있습니다.
-            </p>
           </section>
 
           <section style={styles.section}>
@@ -290,7 +260,7 @@ export default function PrivacyPolicyPage() {
             <ul style={styles.ul}>
               <li>개인정보 보호책임자: {c.privacyOfficerName || "[성명/직책]"} </li>
               <li>
-                담당부서/문의:{" "}
+                문의:{" "}
                 <a href={`mailto:${c.contactEmail}`} style={styles.link}>
                   {c.contactEmail}
                 </a>
