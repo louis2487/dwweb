@@ -13,6 +13,11 @@ type PrivacyPolicyConfig = {
   websiteUrl?: string; // 예: https://daewon469.com
   appPolicyLastUpdated?: string; // 예: 2025.12.27
   appPolicyNoticeDate?: string; // 예: 2025.12.27
+  businessRegNumber?: string; // 사업자등록번호
+  businessAddress?: string; // 사업장 주소
+  businessPhone?: string; // 사업자 유선번호
+  businessRepName?: string; // 대표자명
+  businessNameShort?: string; // 상호명(짧은 표기)
 };
 
 const CONFIG: PrivacyPolicyConfig = {
@@ -27,6 +32,11 @@ const CONFIG: PrivacyPolicyConfig = {
   websiteUrl: "https://www.daewon469.com/privacy",
   appPolicyNoticeDate: "2025.12.27",
   appPolicyLastUpdated: "2025.12.27",
+  businessRegNumber: "219-87-04066",
+  businessAddress: "경기도 평택시 고덕면 도시지원1길 116, 113호",
+  businessPhone: "031-664-1119",
+  businessRepName: "김대원",
+  businessNameShort: "(주)대원파트너스",
 };
 
 function LabelValue({
@@ -306,6 +316,23 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <footer style={{ marginTop: 28, paddingTop: 16, borderTop: "1px solid rgba(0,0,0,0.08)" }}>
+            <div style={styles.businessInfoBox}>
+              <span style={styles.businessInfoItem}>
+                <strong>상호</strong>: {c.businessNameShort || "(주)대원파트너스"}
+              </span>
+              <span style={styles.businessInfoItem}>
+                <strong>사업자등록번호</strong>: {c.businessRegNumber || "219-87-04066"}
+              </span>
+              <span style={styles.businessInfoItem}>
+                <strong>대표자명</strong>: {c.businessRepName || "김대원"}
+              </span>
+              <span style={styles.businessInfoItem}>
+                <strong>사업장 주소</strong>: {c.businessAddress || "경기도 평택시 고덕면 도시지원1길 116, 113호"}
+              </span>
+              <span style={styles.businessInfoItem}>
+                <strong>유선전화</strong>: {c.businessPhone || "031-664-1119"}
+              </span>
+            </div>
             <p style={styles.pMuted}>
               © {new Date().getFullYear()} {c.companyName}. All rights reserved.
             </p>
@@ -390,5 +417,18 @@ const styles: Record<string, React.CSSProperties> = {
     borderRadius: 12,
     padding: "10px 12px",
     fontSize: 13.5,
+  },
+  businessInfoBox: {
+    marginBottom: 6,
+    display: "flex",
+    flexWrap: "wrap",
+    gap: "16px 24px",
+    fontSize: "13.7px",
+    opacity: 0.92,
+  },
+  businessInfoItem: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "2px",
   },
 };
