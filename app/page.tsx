@@ -86,22 +86,6 @@ export default function Home() {
             공식 서비스 소개 페이지입니다.
           </p>
         </div>
-
-        {/* 사업자 정보 */}
-        <div
-          style={{
-            marginTop: 40,
-            paddingTop: 20,
-            borderTop: "1px solid #e5e5e5",
-            fontSize: 14,
-            lineHeight: 1.7,
-          }}
-        >
-          <p><strong>운영주체</strong> : (주)대원파트너스</p>
-          <p><strong>서비스명</strong> : 분양프로</p>
-          <p><strong>사업 유형</strong> : 온라인 정보 제공 서비스</p>
-          <p><strong>문의 이메일</strong> : daewon469@naver.com</p>
-        </div>
       </section>
 
       {/* 푸터 */}
@@ -140,6 +124,9 @@ export default function Home() {
           </span>
           <span style={{ display: "inline-flex", alignItems: "center", gap: "2px" }}>
             <strong>유선전화</strong>: 031-664-1119
+          </span>
+          <span style={{ display: "inline-flex", alignItems: "center", gap: "2px" }}>
+            <strong>문의 이메일</strong>: daewon469@naver.com
           </span>
         </div>
         <p style={{ margin: 0 }}>
