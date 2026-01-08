@@ -108,13 +108,43 @@ export default function Home() {
       <footer
         style={{
           marginTop: "auto",
-          padding: "20px 0",
+          padding: "20px 16px",
           textAlign: "center",
           fontSize: 12,
           color: "#666",
+          borderTop: "1px solid #e5e5e5",
         }}
       >
-        © {new Date().getFullYear()} DW PARTNERS. All rights reserved.
+        <div
+          style={{
+            marginBottom: 12,
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "16px 24px",
+            fontSize: "13.7px",
+            opacity: 0.92,
+            justifyContent: "center",
+          }}
+        >
+          <span style={{ display: "inline-flex", alignItems: "center", gap: "2px" }}>
+            <strong>상호</strong>: (주)대원파트너스
+          </span>
+          <span style={{ display: "inline-flex", alignItems: "center", gap: "2px" }}>
+            <strong>사업자등록번호</strong>: 219-87-04066
+          </span>
+          <span style={{ display: "inline-flex", alignItems: "center", gap: "2px" }}>
+            <strong>대표자명</strong>: 김대원
+          </span>
+          <span style={{ display: "inline-flex", alignItems: "center", gap: "2px" }}>
+            <strong>사업장 주소</strong>: 경기도 평택시 고덕면 도시지원1길 116, 113호
+          </span>
+          <span style={{ display: "inline-flex", alignItems: "center", gap: "2px" }}>
+            <strong>유선전화</strong>: 031-664-1119
+          </span>
+        </div>
+        <p style={{ margin: 0 }}>
+          © {new Date().getFullYear()} DW PARTNERS. All rights reserved.
+        </p>
       </footer>
     </main>
   );
