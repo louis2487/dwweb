@@ -11,9 +11,9 @@ export default function RefundPolicy() {
       <header style={styles.header}>
         <h1 style={styles.h1}>환불 / 취소 정책</h1>
         <p style={styles.meta}>
-          시행일: {EFFECTIVE_DATE} · 문의:{"031-664-1119"}
+          시행일: {EFFECTIVE_DATE} · 문의:{"031-664-1119"} ·
           <a href={`mailto:${CONTACT_EMAIL}`} style={styles.link}>
-            {CONTACT_EMAIL}
+            { CONTACT_EMAIL}
           </a>
         </p>
       </header>

@@ -11,9 +11,9 @@ export default function TermsOfService() {
             <header style={styles.header}>
                 <h1 style={styles.h1}>서비스 이용 약관</h1>
                 <p style={styles.meta}>
-                    시행일: {EFFECTIVE_DATE} · 문의:{"031-664-1119"}
+                    시행일: {EFFECTIVE_DATE} · 문의:{"031-664-1119"} ·
                     <a href={`mailto:${CONTACT_EMAIL}`} style={styles.link}>
-                        · {CONTACT_EMAIL}
+                        { CONTACT_EMAIL}
                     </a>
                 </p>
             </header>
