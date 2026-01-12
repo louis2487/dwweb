@@ -9,11 +9,14 @@ export default function TermsOfService() {
     return (
         <main style={styles.container}>
             <header style={styles.header}>
-                <h1 style={styles.h1}>서비스 이용 약관</h1>
+                <h1 style={styles.h1}>환불 / 취소 정책</h1>
                 <p style={styles.meta}>
-                    시행일: {EFFECTIVE_DATE} · 문의:{"031-664-1119"} ·
+                    <span>시행일: {EFFECTIVE_DATE}</span>
+                    <span style={styles.dot}>·</span>
+                    <span>문의: 031-664-1119</span>
+                    <span style={styles.dot}>·</span>
                     <a href={`mailto:${CONTACT_EMAIL}`} style={styles.link}>
-                        { CONTACT_EMAIL}
+                        {CONTACT_EMAIL}
                     </a>
                 </p>
             </header>
@@ -146,5 +149,9 @@ const styles = {
         color: "#111",
         fontFamily:
             'system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", sans-serif',
+    },
+    dot: {
+        margin: "0 8px",
+        opacity: 0.6,
     },
 } satisfies Record<string, CSSProperties>;

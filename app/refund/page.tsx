@@ -10,10 +10,14 @@ export default function RefundPolicy() {
     <main style={styles.container}>
       <header style={styles.header}>
         <h1 style={styles.h1}>환불 / 취소 정책</h1>
+
         <p style={styles.meta}>
-          시행일: {EFFECTIVE_DATE} · 문의:{"031-664-1119"} ·
+          <span>시행일: {EFFECTIVE_DATE}</span>
+          <span style={styles.dot}>·</span>
+          <span>문의: 031-664-1119</span>
+          <span style={styles.dot}>·</span>
           <a href={`mailto:${CONTACT_EMAIL}`} style={styles.link}>
-            { CONTACT_EMAIL}
+            {CONTACT_EMAIL}
           </a>
         </p>
       </header>
@@ -60,7 +64,7 @@ export default function RefundPolicy() {
           </li>
           <li style={styles.li}>
             원활한 처리를 위해 <b>회원 정보(이메일/휴대폰), 결제일시, 결제수단, 주문번호(영수증),
-            환불 사유</b>를 함께 제출해 주세요.
+              환불 사유</b>를 함께 제출해 주세요.
           </li>
           <li style={styles.li}>
             접수 후 내부 확인을 거쳐 처리되며, 카드 결제 취소는 카드사/PG사 사정에 따라 승인 취소 반영까지
@@ -98,4 +102,8 @@ const styles = {
   ul: { margin: 0, paddingLeft: 18 },
   li: { marginBottom: 8 },
   link: { color: "inherit" },
+  dot: {
+    margin: "0 8px",
+    opacity: 0.6,
+  },
 };
