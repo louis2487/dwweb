@@ -88,10 +88,10 @@ export default function Home() {
 
           <div style={{ marginTop: 14, fontSize: 13.5 }}>
             <a href="/privacy" style={linkStyle}>개인정보처리방침</a>
-            <span style={{ margin: "0 8px", opacity: 0.55 }}>·</span>
+            <span style={{ margin: "0 12px", opacity: 0.55 }}>·</span>
             <a href="/service" style={linkStyle}>서비스 이용약관</a>
-            <span style={{ margin: "0 8px", opacity: 0.55 }}>·</span>
-            <a href="/refund" style={linkStyle}>환불/취소 정책</a>
+            <span style={{ margin: "0 12px", opacity: 0.55 }}>·</span>
+            <a href="/refund" style={linkStyle}>환불 / 취소 정책</a>
           </div>
 
         </div>
