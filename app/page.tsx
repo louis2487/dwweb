@@ -77,7 +77,7 @@ export default function Home() {
             <strong>분양프로</strong>는 분양상담사 구인구직 모바일 플랫폼 서비스 앱 입니다.
           </p>
           <p style={{ marginTop: 12 }}>
-            본 서비스는 구인/뉴스/수다/광고 등 
+            본 서비스는 구인/뉴스/수다/광고 등
             분양 관련 정보 제공을 목적으로 운영됩니다.
           </p>
           <p style={{ marginTop: 12 }}>
@@ -85,6 +85,15 @@ export default function Home() {
             통신사업자 신고를 위한
             공식 서비스 소개 페이지입니다.
           </p>
+
+          <div style={{ marginTop: 14, fontSize: 13.5 }}>
+            <a href="/privacy" style={linkStyle}>개인정보처리방침</a>
+            <span style={{ margin: "0 8px", opacity: 0.55 }}>·</span>
+            <a href="/service" style={linkStyle}>서비스 이용약관</a>
+            <span style={{ margin: "0 8px", opacity: 0.55 }}>·</span>
+            <a href="/refund" style={linkStyle}>환불/취소 정책</a>
+          </div>
+
         </div>
       </section>
 
@@ -136,3 +145,8 @@ export default function Home() {
     </main>
   );
 }
+const linkStyle = {
+  color: "#0b57d0",
+  textDecoration: "none",
+  fontWeight: 700,
+};
