@@ -86,7 +86,7 @@ export default function ProductPage() {
         <h2 style={styles.h2}>화면 예시</h2>
         <div style={styles.imageWrap}>
           <Image
-            src="/product/register-type.png"
+            src="/register-type.png"
             alt="구인등록 등록 유형 선택 화면 예시"
             width={900}
             height={1200}
