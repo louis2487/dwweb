@@ -92,6 +92,8 @@ export default function Home() {
             <a href="/service" style={linkStyle}>서비스 이용약관</a>
             <span style={{ margin: "0 12px", opacity: 0.55 }}>·</span>
             <a href="/refund" style={linkStyle}>환불 / 취소 정책</a>
+             <span style={{ margin: "0 12px", opacity: 0.55 }}>·</span>
+            <a href="/product" style={linkStyle}>판매 상품</a>
           </div>
 
         </div>
