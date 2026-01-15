@@ -137,6 +137,9 @@ export default function Home() {
             <strong>사업자등록번호</strong>: 219-87-04066
           </span>
           <span style={{ display: "inline-flex", alignItems: "center", gap: "2px" }}>
+            <strong>통신판매업신고번호</strong>: 제 2026-경기송탄-0005호
+          </span>
+          <span style={{ display: "inline-flex", alignItems: "center", gap: "2px" }}>
             <strong>대표자명</strong>: 김대원
           </span>
           <span style={{ display: "inline-flex", alignItems: "center", gap: "2px" }}>

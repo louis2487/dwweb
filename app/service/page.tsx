@@ -9,7 +9,7 @@ export default function TermsOfService() {
     return (
         <main style={styles.container}>
             <header style={styles.header}>
-                <h1 style={styles.h1}>환불 / 취소 정책</h1>
+                <h1 style={styles.h1}>서비스 이용 약관</h1>
                 <p style={styles.meta}>
                     <span>시행일: {EFFECTIVE_DATE}</span>
                     <span style={styles.dot}>·</span>
